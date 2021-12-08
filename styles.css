@@ -1,0 +1,38 @@
+.wrapper {
+  position: relative;
+  top: 50vh;
+}
+
+.planet {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: dodgerblue;
+  border-radius: 50%;
+}
+
+.moon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.rock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: silver;
+  border-radius: 50%;
+}

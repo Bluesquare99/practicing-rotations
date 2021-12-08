@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Circles</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <style>
+      @keyframes orbit {
+        from {
+          transform: rotate(0deg) translate(56.5px, 56.5px);
+        }
+        to {
+          transform: rotate(360deg) translate(56.5px, 56.5px);
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .moon:hover {
+          animation: orbit 6000ms linear infinite;
+        }
+      }
+
+      @keyframes orbit-rock {
+        from {
+          transform: rotate(0deg) translateY(80px);
+        }
+        to {
+          transform: rotate(360deg) translateY(80px);
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .rock {
+          animation: orbit-rock 6000ms linear infinite;
+        }
+      }
+    </style>
+
+    <div class="wrapper">
+      <div class="planet"></div>
+      <div class="moon"></div>
+      <div class="rock"></div>
+    </div>
+  </body>
+</html>
